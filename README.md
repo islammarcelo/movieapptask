@@ -6,9 +6,9 @@ Flutter application views movies and its movie details
 I have opened an issue for deeplink feature
 
 
-##Debug APK
+## Debug APK
 google drive link
 
 
-##Release APK
+## Release APK
 google drive link
