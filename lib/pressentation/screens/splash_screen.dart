@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movieapptask/config/app_colors.dart';
 import 'package:movieapptask/config/size_config.dart';
 import 'package:movieapptask/config/strings.dart';
+import 'package:movieapptask/main.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -10,15 +11,19 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
+  MovieAppTask movieAppTask = new MovieAppTask();
 
   @override
   void initState() {
 
     super.initState();
-
-      Future.delayed(Duration(seconds: 3), () async {
+      if(movieAppTask.latestUri.toString().contains("/movies_screen")){
+        Navigator.pushReplacementNamed(context, moviesScreen);
+      }else {
+        Future.delayed(Duration(seconds: 3), () async {
           Navigator.pushReplacementNamed(context, moviesScreen);
-      });
+        });
+      }
 
   }
 
