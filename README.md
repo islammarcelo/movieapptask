@@ -1,5 +1,5 @@
 # movieapptask
-Flutter application views movies and its movie details , I developed the app by bloc pattern
+Flutter application views movies and its movie details , I developed the app by Bloc pattern
 
 
 ## Deeplinks 
